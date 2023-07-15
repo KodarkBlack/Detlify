@@ -151,6 +151,13 @@
     width: 50%;
 }
 
+@media screen and (max-width: 580px) {
+    .phychoYP {
+        width: 80%;
+    }
+
+}
+
 .myoppositiondeybananadeysetup {
     display: flex;
 }
@@ -183,12 +190,7 @@
     text-transform: capitalize;
 }
 
-/* @media screen and (max-width: 580px) {
-    .packages-cont {
-        display: none;
-    }
 
-} */
 
 .packages-cont {
     display: grid;
@@ -593,16 +595,14 @@
 
 .social-logo {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    gap: 10%;
+    margin: 5%;
 }
 
 
 @media screen and (max-width: 580px) {
     .the-big-footer {
-        display: block;
-    }
-
-    .the-footer-beginning {
         display: block;
     }
     
@@ -616,6 +616,15 @@
     width: screen;
     height: inherit;
 }
+
+@media screen and (max-width: 580px) {
+    .the-footer-beginning {
+        display: block;
+    }
+    
+}
+
+
 
 .footer-detlify h3 {
     color: #F79E0E;
