@@ -221,7 +221,11 @@
     text-transform: capitalize;
 }
 
-.Alphaojini-three-two {
+.packages-cont-foot img {
+    margin-top: -6%;
+}
+
+.packages-cont-foot-blendify {
     background: #294199;
     box-shadow: 0px 4px 4px #6A6A6A;
     border-radius: 21px;
@@ -229,14 +233,18 @@
     height: 550px;
 }
 
-.Simplify-Three {
-    background: #FCFAED;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 21px;
-    width: 285px;
-    height: 500px;
-    margin-top: 2%;
-    margin-left: 1%;
+.packages-cont-foot-blendify h3 {
+    color: #F3AA17;
+    font-family: Pacifico;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.packages-cont-foot-blendify img {
+    margin-top: -6%;
 }
 
 .blendify-btn {
@@ -248,6 +256,48 @@
     border: none;
     -webkit-text-fill-color: #FFFFFF;
 }
+
+.Blendify-Footer {
+    color: #FFF;
+    font-family: Nunito Sans;
+    font-size: 13.933px;
+    font-style: normal;
+    /* font-weight: 600; */
+    text-align: left;
+}
+
+.Rockify-Footer {
+    color: #6A6A6A;
+    font-family: Nunito Sans;
+    font-size: 13.933px;
+    font-style: normal;
+    text-align: left;
+}
+
+.Simplify-Footer {
+    color: #6A6A6A;
+    font-family: Nunito Sans;
+    font-size: 13.933px;
+    font-style: normal;
+    font-weight: 600;
+    text-align: left;
+}
+
+
+.packages-cont-foot-rockify {
+    background: #FCFAED;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 21px;
+    width: 285px;
+    height: 500px;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+
+.packages-cont-foot-rockify img {
+    margin-top: -6%;
+}
+
 
 .rockify-btn {
     border-radius: 154px;
@@ -273,7 +323,11 @@
 .moreweoffer {
     justify-content: space-between;
     display: flex;
-    margin: 10%;
+    /* margin: 10%; */
+    background: #F5F6FB;
+    padding: 5%;
+    width: screen;
+    height: inherit;
 }
 
 @media screen and (max-width: 580px) {
