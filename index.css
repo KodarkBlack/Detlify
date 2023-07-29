@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Ubuntu:ital,wght@0,400;0,700;1,300&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 .changeittoblueone{
     background-image: url(/svg/Banner\ \(1\).svg);
     margin-left: 10%;
@@ -46,6 +50,44 @@
     margin-top: 5%;
     -webkit-text-fill-color: #FFFFFF;
     margin-bottom: 5%;
+    animation: shake-vertical 50s linear 0s 1 normal none;
+}
+
+@keyframes shake-vertical {
+			
+    0% {
+        transform:translateY(0);
+    }
+    10% {
+        transform:translateY(-8px);
+    }
+    20% {
+        transform:translateY(8px);
+    }
+    30% {
+        transform:translateY(-8px);
+    }
+    40% {
+        transform:translateY(8px);
+    }
+    50% {
+        transform:translateY(-8px);
+    }
+    60% {
+        transform:translateY(8px);
+    }
+    70% {
+        transform:translateY(-8px);
+    }
+    80% {
+        transform:translateY(6.4px);
+    }
+    90% {
+        transform:translateY(-6.4px);
+    }
+    100% {
+        transform:translateY(0);
+    }
 }
 
 
@@ -157,7 +199,13 @@
     display: flex;
     margin: 5%;
     justify-content: space-between;
-    animation: slide-in-bck-top 1s linear 0s 1 normal none;
+    animation: slide-in-bck-top 1s linear 3.5s 1 normal none;
+    /* animation: rotate 1s linear infinite; */
+    /* animation-play-state: paused; */
+    animation-delay: calc(var(--scroll) * -1s);
+/* 
+    animation-iteration-count: 1;
+    animation-fill-mode: both; */
 }
 
 @keyframes slide-in-bck-top {
@@ -347,6 +395,7 @@
     flex-shrink: 0;
     border: none;
     -webkit-text-fill-color: #FFFFFF;
+    animation: shake-vertical 50s linear 0s 1 normal none;
 }
 
 .Blendify-Footer {
@@ -399,6 +448,8 @@
     flex-shrink: 0;
     -webkit-text-fill-color: #F79E0E;
     border: #F79E0E;
+    animation: shake-vertical 50s linear 0s 1 normal none;
+
 }
 
 .simplify-btn {
@@ -408,6 +459,8 @@
     flex-shrink: 0;
     -webkit-text-fill-color: #F79E0E;
     border: #F79E0E;
+    animation: shake-vertical 50s linear 0s 1 normal none;
+
 }
 
 
@@ -421,6 +474,22 @@
     padding: 5%;
     width: screen;
     height: inherit;
+}
+
+.moreweofferimage {
+    animation: slide-in-bck-right 1s linear 0s 1 normal none;
+}
+
+@keyframes slide-in-bck-right {
+			
+    0% {
+        transform:translateZ(700px) translateX(400px);
+        opacity:0;
+    }
+    100% {
+        transform:translateZ(0) translateX(0);
+        opacity:1;
+    }
 }
 
 @media screen and (max-width: 580px) {
@@ -565,8 +634,37 @@
     display: flex;
     /* margin-left: 40%; */
     justify-content: center;
-    gap: 5%;
     margin: 2%;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+
+}
+
+  
+.Website-videos .radio {
+    flex: 1 1 auto;
+    text-align: center;
+}
+  
+.Website-videos .radio input {
+    display: none;
+}
+  
+.Website-videos .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: rgba(51, 65, 85, 1);
+    transition: all .15s ease-in-out;
+}
+  
+.Website-videos .radio input:checked + .name {
+    background-color: #fff;
+    font-weight: 600;
 }
 
 
@@ -599,14 +697,57 @@
     height: 320px;
     align-items: center;
     margin-left: 3%;
+    animation: bounce-in-zoomin 1s linear 0s 1 normal none
+}
+
+.card img {
+    max-width: 100%;
+    height: inherit;
 }
 
 .card-part {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    /* margin-left: 13%; */
     margin: 12%;
     grid-gap: 2%;
+}
+
+@keyframes bounce-in-zoomin {
+			
+    0% {
+        transform:scale(7);
+        animation-timing-function:ease-in;
+        opacity:0;
+    }
+    35% {
+        transform:scale(1);
+        animation-timing-function:ease-out;
+        opacity:1;
+    }
+    55% {
+        transform:scale(1.5);
+        animation-timing-function:ease-in;
+    }
+    70% {
+        transform:scale(1);
+        animation-timing-function:ease-out;
+    }
+    80% {
+        transform:scale(1.24);
+        animation-timing-function:ease-in;
+    }
+    90% {
+        transform:scale(1);
+        animation-timing-function:ease-out;
+    }
+    95% {
+        transform:scale(1.04);
+        animation-timing-function:ease-in;
+    }
+    100% {
+        transform:scale(1);
+        animation-timing-function:ease-out;
+    }
 }
 
 

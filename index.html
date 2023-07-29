@@ -33,13 +33,13 @@
               <a class="nav-link" href="#">SERVICES<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">PORTFOLIO<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#Portfolio">PORTFOLIO<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">BLOG<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#Blog">BLOG<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">CONTACT<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#Contact">CONTACT<span class="sr-only">(current)</span></a>
             </li>
           </ul>
         </div>
@@ -267,7 +267,7 @@
 
             <button class="allin">Get Started</button>
         </div>
-        <img src="/svg/Group 37178.svg" alt="">
+        <img class="moreweofferimage" src="/svg/Group 37178.svg" alt="">
     </div>
 
 <!-- SITE CONTENT -->
@@ -298,43 +298,81 @@
     </div>
 
     <!-- OUR PORTFOFLIO -->
-    <div class="ourportfolio">
+    <div id="Portfolio" class="ourportfolio">
         <h5>OUR PORTFOLIO</h5>
         <h3>Take A Look At Our Latest Work</h3>
         <div class="Website-videos">
-            <button class="website-design">Website Design</button>
-            <button class="Advertising-videos">Advertising Videos</button>
-            <p>See All</p>
+            <label class="radio">
+                <input type="radio" name="radio" id="website-design" checked="">
+                <span class="name">Website Design</span>
+            </label>
+            <label class="radio">
+                <input type="radio" name="radio" id="advertising-videos">
+                <span class="name">Advertising Videos</span>
+            </label>
+                
+            <label class="radio">
+                <input type="radio" name="radio" id="see-all">
+                <span class="name">See All</span>
+            </label>
         </div>
 
-        <div class="card-part">
-            <div class="card">
-                <img src="" alt="...">
-            </div>
-            <div class="card">
-                <img src="" alt="...">
-            </div>
-            <div class="card">
-                <img src="" alt="...">
+        <div id="website-content" class="content" style="display: none;">
+            <div class="card-part">
+                <div class="card">
+                    <img src="/svg/a-person-taking-an-online-class.svg" alt="...">
+                </div>
+                <div class="card">
+                    <img src="/svg/people-and-technology.svg" alt="...">
+                </div>
+                <div class="card">
+                    <img src="/svg/person-shopping-online.svg" alt="...">
+                </div>
             </div>
         </div>
-
-        <div class="card-part">
-            <div class="card">
-                <img src="" alt="...">
+        <div id="advertising-content" class="content" style="display: none;">
+            <div class="card-part">
+                <div class="card">
+                    <img src="/svg/a-person-taking-an-online-class.svg" alt="...">
+                </div>
+                <div class="card">
+                    <img src="/svg/people-and-technology.svg" alt="...">
+                </div>
+                <div class="card">
+                    <img src="/svg/person-shopping-online.svg" alt="...">
+                </div>
             </div>
-            <div class="card">
-                <img src="" alt="...">
+        </div>
+        <div id="seeall-content" class="content" style="display: none;">
+            <div class="card-part">
+                <div class="card">
+                    <img src="/svg/a-person-taking-an-online-class.svg" alt="...">
+                </div>
+                <div class="card">
+                    <img src="/svg/people-and-technology.svg" alt="...">
+                </div>
+                <div class="card">
+                    <img src="/svg/person-shopping-online.svg" alt="...">
+                </div>
             </div>
-            <div class="card">
-                <img src="" alt="...">
+    
+            <div class="card-part">
+                <div class="card">
+                    <img src="/svg/a-person-taking-an-online-class.svg" alt="...">
+                </div>
+                <div class="card">
+                    <img src="/svg/people-and-technology.svg" alt="...">
+                </div>
+                <div class="card">
+                    <img src="/svg/person-shopping-online.svg" alt="...">
+                </div>
             </div>
         </div>
     </div>
 
     <!-- POPULAR ASKED QUESTION -->
 
-    <div class="popularly-asked-Question">
+    <div id="Blog" class="popularly-asked-Question">
         <h5>POPULAR QUESTION</h5>
         <h3>Frequently Asked Question</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic explicabo voluptas nisi <br> iste reiciendis, tempore commodi necessitatibus, laborum laudantium.</p>
@@ -383,7 +421,7 @@
     </div>
 
   <!-- FOOTER -->
-  <div class="the-footer-beginning">
+  <div id="Contact" class="the-footer-beginning">
     <div class="footer-detlify">
         <h3>DETLIFY.</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br>sed do eiusmod tempor incididunt labore et dolore <br>magna aliqua. Ut enim ad minim veniam.</p>
@@ -458,7 +496,7 @@
     <p>@ Copyright 2020 Deltify Designs. All rights reserved.</p>
 </div>
 
-
+<script src="index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
