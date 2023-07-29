@@ -660,10 +660,11 @@ html {
     padding: .5rem 0;
     color: rgba(51, 65, 85, 1);
     transition: all .15s ease-in-out;
+    -webkit-text-fill-color: #A5DBDD;
 }
   
 .Website-videos .radio input:checked + .name {
-    background-color: #fff;
+    background-color: black;
     font-weight: 600;
 }
 
