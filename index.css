@@ -12,7 +12,7 @@ html {
     background-image: url(/svg/Banner\ \(1\).svg);
     background-size: cover;
     display: flex;
-    padding: 5%;
+    /* padding: 5%; */
 }
 
 .navbar {
@@ -125,21 +125,22 @@ html {
 
 
 .Revenuepart {
-    /* margin: 5%; */
+    padding: 5%;
 }
 
 
 .Revenuepart h3 {
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 300;
-    font-size: 40px;
-    /* line-height: 56px; */
-    color: #E1E1E1;
+    font-size: 28px;
+    width: 100%;
+
+    color: #F6F8E2;
     /* display: flex; */
+    letter-spacing: 1px;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     /* border-right: 5px  orange; The typwriter cursor */
-    white-space: wrap; /* Keeps the content on a single line */
+    white-space: nowrap; /* Keeps the content on a single line */
     /* margin: 0 auto; Gives that scrolling effect as the typing happens */
     /* letter-spacing: 5px; Adjust as needed */
     animation: 
@@ -764,7 +765,20 @@ html {
     height: 320px;
     align-items: center;
     margin-left: 3%;
-    animation: bounce-in-zoomin 1s linear 0s 1 normal none
+    animation: flip-vertical-right 1s linear 0s 1 reverse forwards;
+
+}
+
+@keyframes flip-vertical-right {
+			
+    0% {
+        transform:translateX(0) rotateY(0);
+        transform-origin:100% 50%;
+    }
+    100% {
+        transform:translateX(100%) rotateY(-180deg);
+        transform-origin:0% 50%;
+    }
 }
 
 .card img {
@@ -779,43 +793,7 @@ html {
     grid-gap: 2%;
 }
 
-@keyframes bounce-in-zoomin {
-			
-    0% {
-        transform:scale(7);
-        animation-timing-function:ease-in;
-        opacity:0;
-    }
-    35% {
-        transform:scale(1);
-        animation-timing-function:ease-out;
-        opacity:1;
-    }
-    55% {
-        transform:scale(1.5);
-        animation-timing-function:ease-in;
-    }
-    70% {
-        transform:scale(1);
-        animation-timing-function:ease-out;
-    }
-    80% {
-        transform:scale(1.24);
-        animation-timing-function:ease-in;
-    }
-    90% {
-        transform:scale(1);
-        animation-timing-function:ease-out;
-    }
-    95% {
-        transform:scale(1.04);
-        animation-timing-function:ease-in;
-    }
-    100% {
-        transform:scale(1);
-        animation-timing-function:ease-out;
-    }
-}
+
 
 
 /* POPULARLY ASKED QUESTIONS */
@@ -1030,7 +1008,8 @@ html {
     display: flex;
     padding: 5%;
     justify-content: space-evenly;
-    background: #262A4E;
+    background-image: url(/svg/Banner\ \(1\).svg);
+    background-size: cover;
     width: screen;
     height: inherit;
     animation: slit-in-horizontal 1s linear 1s 1 alternate forwards;
@@ -1106,7 +1085,8 @@ html {
 
 .the-copyright-part {
     text-align: center;
-    background: #262A4E;
+    background-image: url(/svg/Banner\ \(1\).svg);
+    background-size: cover;
     padding: 1%;
     color: rgba(255, 255, 255, 0.50);
     font-family: Roboto;
